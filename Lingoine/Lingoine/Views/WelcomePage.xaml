@@ -17,7 +17,6 @@
             <Button Name="signin" Width="200" Click="SignInClick" Content="Sign In" VerticalAlignment = "Center" FontSize = "15" HorizontalAlignment = "Center"></Button>
             <Rectangle Height="20"></Rectangle>
             <Button Name="explore" Width="200" Click="ExploreClick" Content="Explore" VerticalAlignment = "Center" FontSize = "15" HorizontalAlignment = "Center"></Button>
-
         </StackPanel>
 
     </Grid>
