@@ -26,5 +26,20 @@ namespace Lingoine.Views
         {
             this.InitializeComponent();
         }
+
+        private void submitButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void resetButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void cancelButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

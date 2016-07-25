@@ -9,31 +9,37 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <Grid Background="White" Height="264" VerticalAlignment="Center">
+        <Grid Background="White" Height="400" VerticalAlignment="Center">
             <Grid.RowDefinitions>
                 <RowDefinition Height="252*" />
-                <!--   <RowDefinition Height="12*" />-->
             </Grid.RowDefinitions>
 
             <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,20,0,0" Name="textBlockFirstName" Text="First Name:" VerticalAlignment="Top" Width="110" />
             <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,50,0,0" Name="textBlockLastName" Text="Last Name:" VerticalAlignment="Top" Width="110" />
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,80,0,0" Name="textBlockEmail" Text="Email" VerticalAlignment="Top" Width="110" />
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,107,0,0" Name="textBlockPassword" Text="Password:" VerticalAlignment="Top" Width="110"  />
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,136,0,0" Name="textBlockConfirmPassword" Text="ConfirmPassword:" VerticalAlignment="Top" Width="110" Grid.RowSpan="2" />
-            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,166,0,0" Name="textBlockAddress" Text="Address" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,80,0,0" Name="textBlockUserName" Text="User Name:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,110,0,0" Name="textBlockEmail" Text="Email:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,140,0,0" Name="textBlockPassword" Text="Password:" VerticalAlignment="Top" Width="110"  />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,170,0,0" Name="textBlockConfirmPassword" Text="ConfirmPassword:" VerticalAlignment="Top" Width="132" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,205,0,0" Name="textBlockDOB" Text="DOB:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,240,0,0" Name="textBlockGender" Text="Gender:" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="300,279,0,0" Name="textBlockLocation" Text="Location:" VerticalAlignment="Top" Width="110" />
 
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="416,20,0,0" Name="textBoxFirstName" VerticalAlignment="Top" Width="222" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="416,50,0,0" Name="textBoxLastName" VerticalAlignment="Top" Width="222" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="416,80,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="222" />
-            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="416,107,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="222" />
-            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="416,136,0,0" Name="passwordBoxConfirm" VerticalAlignment="Top" Width="222" />
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="416,0,0,66" Name="textBoxAddress" VerticalAlignment="Bottom" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="437,20,0,0" Name="textBoxFirstName" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="437,50,0,0" Name="textBoxLastName" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="437,80,0,0" Name="textBoxUserName" VerticalAlignment="Top" Width="222" />
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="437,110,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="222" />
+            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="437,140,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="222" />
+            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="437,170,0,0" Name="passwordBoxConfirm" VerticalAlignment="Top" Width="222" />
+            <DatePicker Height="23" HorizontalAlignment="Left" Margin="437,201,0,0" Name="dateOfBirth" VerticalAlignment="Top"  />
+            <RadioButton Height="23" HorizontalAlignment="Left" Margin="436,234,0,0" Name="radioButtonMale" Content="Male" GroupName="radioButtonGender" VerticalAlignment="Top"/>
+            <RadioButton Height="23" HorizontalAlignment="Left" Margin="534,234,0,0" Name="radioButtonFemale" Content="Female" GroupName="radioButtonGender" VerticalAlignment="Top"/>
+            <TextBox Height="23" HorizontalAlignment="Left" Margin="437,0,0,94" Name="textBoxLocation" VerticalAlignment="Bottom" Width="222" />
 
-            <Button Content="Submit" Height="23" HorizontalAlignment="Center" Margin="-115,204,0,0" Name="submitButton" VerticalAlignment="Top" Width="70" />
-            <Button Content="Reset" Height="23" HorizontalAlignment="Center" Margin="30,204,0,0" Name="resetButton" VerticalAlignment="Top" Width="70" />
-            <Button Content="Cancel" Height="23" HorizontalAlignment="Center" Margin="175,204,0,0" Name="cancelButton" VerticalAlignment="Top" Width="70" />
+            <Button Content="Submit" Height="30" HorizontalAlignment="Center" Margin="441,315,513,0" Name="submitButton" VerticalAlignment="Top" Width="70" Click="submitButton_Click" />
+            <Button Content="Reset" Height="30" HorizontalAlignment="Center" Margin="513,315,441,0" Name="resetButton" VerticalAlignment="Top" Width="70" Click="resetButton_Click" />
+            <Button Content="Cancel" Height="30" HorizontalAlignment="Center" Margin="586,315,368,0" Name="cancelButton" VerticalAlignment="Top" Width="70" Click="cancelButton_Click" />
         </Grid>
-        
+
     </Grid>
-    
+
 </Page>
