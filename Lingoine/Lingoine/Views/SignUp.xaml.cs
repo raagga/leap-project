@@ -34,12 +34,21 @@ namespace Lingoine.Views
 
         private void resetButton_Click(object sender, RoutedEventArgs e)
         {
-
+            textBoxFirstName.Text = String.Empty;
+            textBoxLastName.Text = String.Empty;
+            textBoxUserName.Text = String.Empty;
+            textBoxEmail.Text = String.Empty;
+            passwordBox1.Password = String.Empty;
+            passwordBoxConfirm.Password = String.Empty;
+            dateOfBirth.Date = DateTime.Today;
+            radioButtonMale.IsChecked = false;
+            radioButtonFemale.IsChecked = false;
+            textBoxLocation.Text = String.Empty;
         }
 
         private void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(Views.WelcomePage));
         }
     }
 }
