@@ -17,5 +17,7 @@ namespace Lingoine.Models
         public string Password { get; set; }
         public string SkypeId { get; set; }
         public bool IsPremium { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public bool Gender { get; set; }
     }
 }
