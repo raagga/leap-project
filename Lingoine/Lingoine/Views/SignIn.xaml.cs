@@ -20,26 +20,21 @@ namespace Lingoine.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class WelcomePage : Page
+    public sealed partial class SignIn : Page
     {
-        public WelcomePage()
+        public SignIn()
         {
             this.InitializeComponent();
         }
 
         private void SignInClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Views.SignIn));
+            
         }
 
-        private void SignUpClick(object sender, RoutedEventArgs e)
+        private void CancelClick(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Views.SignUp));
+            this.Frame.Navigate(typeof(Views.WelcomePage));
         }
-        private void ExploreClick(object sender, RoutedEventArgs e)
-        {
-
-        }
-
     }
 }
